@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Macondo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-size: 62.5%;     
+}
+
+body{
+    font-family: 'Akshar', sans-serif;
+    font-family: 'Macondo', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ############## utility classes ##################### */
+
+.white{color: #defdef;}
+.grey{ color: rgb(19, 17, 17);}
+
+.lg-heading{ font-size: 5rem; font-weight: 800;}
+.md-heading{ font-size: 3.2rem; font-weight: 600;}
+.sl-heading{ font-size: 2.5rem; font-weight: 400;}
+.xsl-heading{ font-size: 2rem; font-weight: 400;}
+.p-size{font-size: 1.5rem; font-weight: 300;}
+
+.link:hover{ color: #ffca3a; border-bottom: .1em solid #ffca3a;}
+.link{ text-decoration: none; color: rgb(19, 17, 17); font-size: 2rem; font-weight: 400; margin: .2em .5em;}
+
+.HG::selection{ color: #1c1c1d; background-color: #ffca3a; text-shadow: .04em .04em darkseagreen;}
+.pad{ padding: 1em;}
+.space{ line-height: 2em;}
+
+.container{
+    max-width: 100vw;
+    width: 98%;
+    margin: auto;
+}
+
+.btn1{
+    background-color: #167ebb;
+    border-radius: 1rem;
+    color: #defdef;
+    display: inline-block;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+.btn1:hover{background-color: #00ecfd;}
+
+.demo1{border: 5px solid red;}
+.demo2{border: 3px solid green;}
+
+/* ########################## NavBar CSS ################### */
+
+.navbar{
+    height: 10vh;   
+}
+
+.navbar .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ##################### header CSS & project ##################### */
+ 
+.header img{
+    width: 100%;
+ }
+
+.header .container, .globalProject .container{
+    padding: 2rem 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
+
+/* ########################  team CSS  ################### */
+
+.team .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 7rem 0;
+}
+
+.team .box{
+    width: 23%;
+    min-width: 28rem;
+    padding: 20em;
+    margin: 0px 1rem;
+    text-align: center;
+    border: .2rem solid rgb(94, 92, 92);
+}
+
+.team img{
+    width: 100%;
+}
+
+.team .box:hover{
+    background-color: liggh\;
+}
+
+/* ############################# allProject ####################### */
+
+.allProject .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.allProject .box{
+    width: 23%;
+    min-width: 28rem;
+    margin: 0.5px 1rem 1rem 1rem;
+}
+
+.allProject img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ########################## Table ############################### */
+
+.table table{
+    width: 85%;
+    margin: 5rem auto;
+    border: 3px solid grey;
+}
+
+.table td, .table th{
+    padding: 3rem;
+    border-collapse: collapse;
+
+    border-bottom: 1px solid grey;
+}
+
+/* ########################### interest form ########################## */
+
+.interest{
+    padding: 5rem 0;
+}
+
+.interest .interest-form{
+    max-width: 90rem;
+    width: 90%;
+    margin: auto;
+}
+
+.interest-form .heading{
+    text-align: center;
+    padding-bottom: 0.3rem;
+}
+
+.interest-form p{
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.interest-form label{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.interest-form input{
+    font-size: 2.5rem;
+}
+
+.interest-form .form select{
+    font-size: 2.5rem;
+}
+
+.interest-form textarea{
+    font-size: 1rem;
+}
+
+.interest-form .form input, .interest-form .form textarea, .interest-form .form label, .interest-form .form select{
+    display: block;
+    width: 100%;
+}
+
+.interest-form .form .checkbox{
+    display: inline;
+}
+
+.form input:focus, .form input:hover, .interest-form textarea:focus, .interest-form textarea:hover{
+    padding: 0.13em;
+    background-color: whitesmoke;
+    border: none;
+}
+
+/* ######################### contact-form ################################## */
+
+.contact-us .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact-us .map{
+    width: 45%;
+    min-width: 28rem;
+    text-align: justify;
+    padding: 3rem 3rem 3rem 0px;
+}
+
+.contact-us .contact-form{
+    width: 45%;
+    min-width: 28rem;
+    padding: 3rem 0px 3rem 3rem;
+    border-left: 2px solid grey ;
+}
+
+.contact-us img{
+    width: 100%;
+}
+
+.contact-form label{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contact-form input{
+    font-size: 2.5rem;
+}
+
+.contact-form textarea{
+    font-size: 1rem;
+}
+
+.contact-form .form input, .contact-form .form textarea, .contact-form .form label{
+    display: block;
+    width: 100%;
+}
+
+.contact-form .form .checkbox{
+    display: inline;
+    text-align: left;
+}
+
+.form input:focus, .form input:hover, .interest-form textarea:focus, .interest-form textarea:hover{
+    padding: 0.13em;
+    background-color: whitesmoke;
+    border: none;
+}
+
+/* ################################ footer ################################### */
+
+footer p{
+    background-color: #1c1c1d;
+    text-align: center;
+    color: white;
+    padding: 1.5rem;
+}
